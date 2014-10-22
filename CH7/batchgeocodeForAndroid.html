@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <title>Batch geocoder</title>
+
+<style type="text/css">
+body{font-family: Arial; font-size: small; background-color: #ccf;}
+#outline {margin:20px; float:left; -moz-outline-radius:20px;  -moz-outline-style:solid;
+   -moz-outline-color:#9FB6CD; -moz-outline-width:10px;}
+#map{width:512px; height:440px; float:left;}
+#head{text-align:left; margin-left:20px; font-size:150%;}
+#novel{width:400px; margin:20px;float:right;}
+#AdSense{margin:10px;}
+#scale{width:300px; border: 1px solid blue; visibility:hidden}
+#bar{background-color:blue; height:4px; width:0px;}
+a:hover {color: red; text-decoration: underline overline;}
+td{vertical-align:top;}
+code{font-size:13px}
+.pushpin{width:20px; height:34px; border:none;}
+.small{color:#666; font-size:80%;}
+.geocode {}
+</style>
+
+  <script src="http://maps.google.com/maps?file=api&v=2&key=ABQIAAAAYxpy0HiKBWXiyhVrpVqkshTzRM_GTxWOqTaXXRScn8KwUCiJWhT96ZS2MOLTq-SEmmJL1_cNrib9tA" type="text/javascript">
+  </script>
+
+</head>
+
+<body onunload="GUnload()" >
+
+<table>
+  <tr>
+    <td>
+      <h3 id="head"> Esa's Google Maps API experiments.</h3>
+    </td>
+    <td>
+
+    </td>
+
+  </tr>
+  <tr>
+    <td>
+      <div id="outline">
+        <div id="map">
+          <noscript>You should turn on JavaScript</noscript>
+        </div>
+      </div>
+
+    </td>
+    <td rowspan="2">
+      <div id="novel">
+        <h4>Batch geocoder with CSV output</h4>
+        <div id="scale"><div id="bar"></div></div>
+        Paste your addresses here:<br/>
+        <form class ="geocode" action="#" onsubmit="geo(this.haku.value, this.ext.value); return false">
+          <textarea cols="40" rows="10" wrap="off" id="haku" name="haku" title="200+ lines not recommended at a time">Step1: 請輸入地址或是名稱</textarea>
+
+          <input type="submit" value="轉譯經緯度" title="Run"/>
+          with
+          <input type="text" id="ext" title="Extension added to each query"/>
+          extension
+        </form>
+        Errors:
+        <div>
+        <textarea id="errors"
+cols="40" rows="5" wrap="off" title="Error report"></textarea><br/>
+<!--
+        <input type="button" id="stop" value="Stop" title="Emergency stop" onclick="len=0" />
+        <input type="button" id="clr-in" value="Clr output" title="Clear map and output fields" onclick="clearOutput()"/>
+
+        <input type="button" id="clr-out" value="Clr input" title="Clear input field" onclick="clearInput()"/>
+-->
+        </div>
+        <p>Extension is a country, state or town that is equal for all your addresses but missing from your list.</p>
+        <p>Output format: <code> lng, lat, address</code> (GPS equipment POI CSV file format).</p>
+        <p></p>
+
+        <p><span id="api-version"></span></p>
+        <p><a href="http://koti.mbnet.fi/ojalesa/exam/index.html">More experiments</a></p>
+        <p>
+          <input type="button" value="輸出最終Java程式碼" title="output Javascriptcode" onclick="outputData()"/>
+        </p> 
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+
+    </td>
+  </tr>
+</table>
+<textarea name="memo"
+cols="40" rows="30" wrap="off" id="memo" title="Copy and edit your material here."></textarea>
+<textarea name="memo2"
+cols="40" rows="30" wrap="off" id="phone" title="Copy and edit your material here.">Step2: 請輸入對應電話</textarea>
+<textarea
+cols="40" rows="30" wrap="off" title="OutJS" id="memoJS"></textarea>
+
+<script type="text/javascript">
+
+/**
+ * 'Map coming...' visible only with JavaScript on.
+ */
+document.getElementById("map").innerHTML = "Map coming...";
+document.getElementById("api-version").innerHTML = "api v=2."+G_API_VERSION;
+if (!GBrowserIsCompatible()) {
+  alert('Sorry. Your browser is not Google Maps compatible.');
+}
+
+/**
+ * map
+ */
+_mPreferMetric = true;
+var map = new GMap2(document.getElementById("map"));
+map.setCenter(new GLatLng(0,0), 1);
+map.addControl(new GLargeMapControl());
+map.addControl(new GMapTypeControl(1));
+map.addControl(new GScaleControl());
+map.openInfoWindowHtml(map.getCenter(), "Nice to see you.");
+map.closeInfoWindow(); //preload iw
+
+
+/**
+ * Geocoder
+ */
+var points = [];
+var bounds = new GLatLngBounds();
+var geocoder = new GClientGeocoder();
+var lines;
+var lineNumber;
+var len = 0;
+var bar = document.getElementById("bar");
+var scale = document.getElementById("scale");
+function geo(addresses,ext){
+  scale.style.visibility = "visible";
+  var start = new Date().getTime();
+  lines = addresses.split("\n");
+  len = lines.length;
+  lineNumber=0;
+  function doIt(){
+    var query = lines[lineNumber];
+    if(ext)query += ", " + ext;
+    geocoder.getLatLng(query,function(point){
+      if(!point){
+        lineNumber++;
+        report(query, lineNumber);
+        if(lineNumber<len){doIt()};
+      }else{
+        var marker = new GMarker(point);
+        map.addOverlay(marker);
+        bounds.extend(point);
+        point.address = query;
+        points.push(point);//to be used
+        memo(point); // intentionally slow function
+        lineNumber++;
+        marker.bindInfoWindowHtml(lineNumber + "<br/>" + query);
+        if(lineNumber<len){doIt()};
+        map.fit(bounds);
+        bar.style.width = parseInt(300*lineNumber/len)+"px";
+      }
+      if(lineNumber>=len){
+        var time = ((new Date().getTime() - start)/1000).toFixed(0);
+        alert(lineNumber+" addresses\n"+time+"seconds")
+      };
+    });
+  }
+  doIt();
+}
+
+
+
+
+
+/**
+ * Dom functions for output fields
+ */
+var printOut = document.getElementById("memo");
+printOut.value = "";
+function memo(pnt){
+  var row = pnt.lng().toFixed(5);
+  row += ", ";
+  row += pnt.lat().toFixed(5);
+  row += ", ";
+  row += pnt.address;
+  row += "\n";
+  printOut.value += row;
+}
+
+var errorReport = document.getElementById("errors");
+errorReport.value = "";
+function report(query_, n_){
+  var row ="#"+n_;
+  row += " not found: ";
+  row += query_;
+  row += "\n";
+  errorReport.value += row;
+}
+
+function clearInput(){
+  document.getElementById("haku").value="";
+  scale.style.visibility = "hidden";
+  bar.style.width = "0px";
+}
+
+function clearOutput(){
+  map.clearOverlays();
+  bounds = new GLatLngBounds();
+  printOut.value="";
+  errorReport.value="";
+  document.getElementById("memoJS").value="";
+  document.getElementById("phone").value="";
+  scale.style.visibility = "hidden";
+  bar.style.width = "0px";
+}
+
+/**
+ * zoom and pan to fit in view
+ */
+GMap2.prototype.fit = function(bounds){
+  this.setCenter(bounds.getCenter(), this.getBoundsZoomLevel(bounds));
+}
+
+function outputData(){
+  var addresses = document.getElementById("memo").value;
+  var phoneRaw = document.getElementById("phone").value;
+  var JSdata= document.getElementById("memoJS");
+  var lines = addresses.split("\n");
+  var phoneNumbers = phoneRaw.split("\n");
+  var length = lines.length;
+  //var wholeOuput = [][];
+  var blank =/\s+/g;
+
+  for(var i in lines) {
+    lines[i] = lines[i].replace(blank, "");
+    lines[i] = lines[i].replace(",", " ");
+    lines[i] = lines[i].replace(",", " ");
+    var elements = lines[i].split(" ");
+
+    JSdata.value += "allData.add(initEachRecord(" + elements[0]+"," + elements[1]+", \""+ elements[2]+"\", \""+phoneNumbers[i]+"\"));";
+	//JSdata.value += "allData.add(initEachRecord(" + elements[0]+"," + elements[1]+");";
+    JSdata.value += "\n";     
+  }   
+}
+
+function trim(str){
+  var regExp=/^\s*(.*?)\s*$/;
+  return str.replace(regExp, "");
+}
+
+
+</script>
+</body>
+</html>
