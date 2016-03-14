@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>jQuery iPhone UI</title>     
+    <link rel="stylesheet" href="css/iphone.css" type='text/css' media='all' />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/ui/ui.iMenu.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function(){
+			$(".myMenu").iMenu();
+		});
+   </script>
+</head>
+<body>
+	<ul class="myMenu">
+		<li><a href="#" title="Label 1">Label 1</a></li>
+		<li><a href="#" title="Label 2" class="arrow">Label 2</a></li>
+		<li><a href="#" title="Label 3" class="arrow">Label 3</a></li>
+		<li><a href="#" title="Label 4">Label 4</a></li>
+	</ul>         
+	<ul class="myMenu">
+		<li><a href="#" title="Label 1" class="icon iicon"><em class="ii-inbox"></em>Label 1</a></li>
+		<li><a href="#" title="Label 2" class="arrow icon iicon"><em class="ii-paperclip"></em>Label 2</a></li>
+		<li><a href="#" title="Label 3" class="arrow icon iicon"><em class="ii-gear"></em>Label 3</a></li>
+	</ul>         
+</body>
+</html>

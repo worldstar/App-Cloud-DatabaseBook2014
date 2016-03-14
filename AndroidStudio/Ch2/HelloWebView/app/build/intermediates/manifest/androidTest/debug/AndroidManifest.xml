@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nhu.mobile.cpc.test">
+
+    <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="3" />
+
+    <application>
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+    <instrumentation android:name="android.test.InstrumentationTestRunner"
+                     android:targetPackage="nhu.mobile.cpc"
+                     android:handleProfiling="false"
+                     android:functionalTest="false"
+                     android:label="Tests for nhu.mobile.cpc"/>
+</manifest>

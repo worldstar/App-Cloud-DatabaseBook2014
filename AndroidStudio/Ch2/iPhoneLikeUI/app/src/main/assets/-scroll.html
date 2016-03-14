@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>iScroll Widget</title>    
+    <link rel="stylesheet" href="css/style.css" type='text/css' media='all' />
+    <link rel="stylesheet" href="css/iphone.css" type='text/css' media='all' />
+	<link rel="stylesheet" href="css/iphone-480.css" type='text/css' media='only screen and (max-device-width: 480px)' />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery.iphone.js"></script>
+	
+    <script type="text/javascript" src="js/other/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="js/other/jquery.disable.text.select.js"></script>
+
+   
+    <script type="text/javascript" src="js/ui/ui.iScroll.js"></script>
+	<script type="text/javascript">
+       $(document).ready(function(){
+        $(".scroll").iScroll({height:200});
+       });
+    </script>
+	<style type="text/css">
+        .scroll {
+            /* or set height like this */
+            height:200px;		
+        }        
+    </style>    
+</head>
+<body>
+         <div class="scroll">
+         Lorem ipsum ...
+                    <h3>A</h3>
+                    <ul class="inlist">
+                        <li>Abc1</li>
+
+                        <li>Abc2</li>
+                        <li>Abc3</li>
+                        <li>Abc4</li>
+                        <li>Abc1</li>
+                        <li>Abc2</li>
+                        <li>Abc3</li>
+
+                        <li>Abc4</li>
+                    </ul>
+                    <h3>D</h3>
+                    <ul class="inlist">
+                        <li>Dba1</li>
+                        <li>Dba2</li>
+                        <li>Dba3</li>
+
+                        <li>Dba1</li>
+                        <li>Dba2</li>
+                        <li>Dba3</li>
+                    </ul>
+                    <h3>F</h3>
+                    <ul class="inlist">
+                        <li>Fgh1</li>
+
+                        <li>Fgh2</li>
+                        <li>Fgh3</li>
+                        <li>Fgh4</li>
+                        <li>Fgh5</li>
+                    </ul>         
+         </div>
+
+    
+</body>
+</html>

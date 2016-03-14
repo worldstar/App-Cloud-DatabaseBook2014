@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>iTabs Widget</title>
+   <link rel="stylesheet" href="css/iphone.css" type='text/css' media='all' />
+   <script type="text/javascript" src="js/jquery.js"></script>
+   <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/ui/ui.iInput.js"></script>
+	<script type="text/javascript" src="js/ui/ui.iPassword.js"></script>
+    <script type="text/javascript" src="js/ui/ui.iCheckBox.js"></script>
+	<script type="text/javascript" src="js/ui/ui.iRadioButton.js"></script>
+    <script type="text/javascript" src="js/ui/ui.iSelect.js"></script> 
+    <script type="text/javascript" src="js/ui/ui.iScroll.js"></script>    
+   <script type="text/javascript">
+       $(document).ready(function(){		
+    	$("input:checkbox").iCheckBox();
+    	$("input:text").iInput();
+    	$("input:password").iPassword();    	
+    	$("select").iSelect();    	
+       });
+   </script>
+</head>
+
+<body style="margin:0px 0px 0px 0px;">
+	<form action="index.jsp">
+		<input class="iinput" type="text" id="login" name="login" value=""/>
+		<label>Login</label>
+        <br/>
+        <br/>
+                    
+        <input class="ipassword" type="password" id="password" name="password" value=""/>
+		<label for="password">Password</label>
+		<br/>
+		<br/>
+    
+		<input class="icheckbox" type="checkbox" id="remember" name="remember" value="1"/>
+		<label for="remember">開啟</label>
+		<br/>
+		<br/>
+					
+		<input class="iradiobutton" type="radio" name="type" id="type1" value="ABC" checked="join" />
+		<label for="type1">參加本活動</label>
+		<input class="iradiobutton" type="radio" name="type" id="type2" value="notjoin" />
+		<label for="type2">不克參加</label>
+		<input class="iradiobutton" type="radio" name="type" id="type3" value="later" />
+		<label for="type3">稍後決定</label>
+		<br/>
+		<br/>
+					
+		<select class="iselect" name="options" style="width:100%">
+			<option>1人</option>
+			<option selected="selected">2人</option>
+			<option>3人</option>
+			<option>4人及以上</option>
+		</select>                   
+		<br/>					
+
+		<input type="submit" />       
+	</form>
+</body>
+</html>

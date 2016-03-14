@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu01"
+          android:icon="@drawable/map"
+          android:title="Map" />
+    <item android:id="@+id/menu02"
+          android:icon="@drawable/picture"
+          android:title="圖片" />
+    <item android:id="@+id/quit"
+          android:icon="@drawable/quit"
+          android:title="結束" />            
+</menu>

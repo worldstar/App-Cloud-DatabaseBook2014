@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>iGallery Widget</title>
+    <link rel="stylesheet" href="css/iphone.css" type='text/css' media='all' />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>  
+    <script type="text/javascript" src="js/ui/ui.iGallery.js"></script>
+    <script type="text/javascript" src="js/other/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="js/other/jquery.disable.text.select.js"></script>    
+	<script type="text/javascript" src="js/ui/ui.iScroll.js"></script>    
+    
+    <script type="text/javascript">
+       $(document).ready(function(){
+        // jquery.iphone.js have autoloader, but you can use
+        // alternative method of init widget
+		$(".myGallery").iGallery();
+		$(".myScroll").iScroll({height:480});
+       });
+    </script>    
+	<style type="text/css">
+        .scroll {
+            /* or set height like this */
+            height:480px;		
+        }
+    </style>
+    
+</head>
+
+<body style="margin:0px 0px 0px 0px">    
+<div class="myScroll">
+    <div class="myGallery" style="width:320px;height:480px;">					
+        <img src="CPCmobile/cpc1.jpg" style="width:320px;height:480px;" alt=""/>
+        <img src="CPCmobile/cpc2.jpg" style="width:320px;height:480px;" alt=""/>    
+        <img src="CPCmobile/cpc3.jpg" style="width:320px;height:480px;" alt=""/>                      
+    </div>    
+</div>     
+</body>
+</html>

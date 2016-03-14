@@ -1,0 +1,63 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .phonegap\
+* .phonegap\android\
+* .phonegap\android\phonegap-1.4.1.jar
+* .phonegap\android\phonegap-1.4.1.js
+* .phonegap\android\readme.md
+* .phonegap\config
+* .phonegap\readme.md
+* phonegap\
+* phonegap\create
+* phonegap\debug
+* phonegap\emulate
+* phonegap\log
+* phonegap\templates\
+* phonegap\templates\Activity.java
+* phonegap\templates\project\
+* phonegap\templates\project\AndroidManifest.xml
+* phonegap\templates\project\assets\
+* phonegap\templates\project\assets\www\
+* phonegap\templates\project\assets\www\index.html
+* phonegap\templates\project\assets\www\main.js
+* phonegap\templates\project\assets\www\master.css
+* phonegap\templates\project\res\
+* phonegap\templates\project\res\drawable\
+* phonegap\templates\project\res\drawable\icon.png
+* phonegap\templates\project\res\xml\
+* phonegap\templates\project\res\xml\phonegap.xml
+* phonegap\templates\project\res\xml\plugins.xml
+* proguard.cfg
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* libs\phonegap-1.4.1.jar => app\libs\phonegap-1.4.1.jar
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

@@ -1,0 +1,71 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From PhotoViewlibrary:
+* pom.xml
+From PullToRefreshlibrary:
+* build.xml
+* pom.xml
+From TaiwanCultureExample:
+* TaiwanCulture.apk
+* build.properties
+* build.xml
+* hipowerkey.keystore
+* proguard\
+* proguard\dump.txt
+* proguard\mapping.txt
+* proguard\seeds.txt
+* proguard\usage.txt
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In PhotoViewlibrary:
+* AndroidManifest.xml => photoViewlibrary\src\main\AndroidManifest.xml
+* assets\ => photoViewlibrary\src\main\assets
+* res\ => photoViewlibrary\src\main\res
+* src\ => photoViewlibrary\src\main\java\
+In PullToRefreshlibrary:
+* AndroidManifest.xml => pullToRefreshlibrary\src\main\AndroidManifest.xml
+* assets\ => pullToRefreshlibrary\src\main\assets
+* res\ => pullToRefreshlibrary\src\main\res\
+* src\ => pullToRefreshlibrary\src\main\java
+In TaiwanCultureExample:
+* AndroidManifest.xml => taiwanCultureExample\src\main\AndroidManifest.xml
+* assets\ => taiwanCultureExample\src\main\assets
+* lint.xml => taiwanCultureExample\lint.xml
+* proguard.cfg => taiwanCultureExample\proguard.cfg
+* res\ => taiwanCultureExample\src\main\res\
+* src\ => taiwanCultureExample\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

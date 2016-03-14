@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, myMultiLangTab!</string>
+    <string name="app_name">myMultiLangTab</string>    
+    <string name="Map">Map</string>
+    <string name="Photo">Photo</string>
+    <string name="About">About</string>
+</resources>

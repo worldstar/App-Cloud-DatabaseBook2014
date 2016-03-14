@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SmartTravelActivity!</string>
+    <string name="app_name">台湾艺术</string>
+    <string name="descr_image">Company Figures</string>
+    <string name="PerformingArts">表演万象</string>
+    <string name="ExhibitionSquare">展览广场</string>
+    <string name="LiveMusic">音乐现场</string>   
+    <string name="Lecture">講座研習</string>
+    <string name="FilmScope">讲座研习</string>
+    <string name="CityKaleidoscope">城市万花筒</string>  
+    <string name="FamilyOutings">亲子活动</string>
+    <string name="BeyondTaipei">城外行脚</string>
+    <string name="socialnetwork">社群</string>    
+    
+    <string name="checkVersion">检查数据库版本</string>
+    <string name="pleaseWait">请稍候...</string>
+    <string name="downloadDB">下载数据库</string>   
+    <string name="clickConfirm">请点选确认</string>
+    <string name="confirm">确认</string>
+    <string name="updateDB">更新数据库</string>  
+    <string name="clickConfirmorCancel">请点选确认或取消</string>
+    <string name="cancel">取消</string>
+    <string name="downloading">下载中</string>
+    
+    <string name="nearby100">附近100笔</string>  
+    <string name="keyword">请输入关键字</string> 
+    <string name="spinnerHint">请选择下面分类</string>  
+    <string name="youSelect">目前选择</string>
+    <string name="KM">公里</string>
+    <string name="activityStartDate">开始时间</string>
+    <string name="activityEndDate">结束时间</string>        
+    
+    <string name="intro">简介</string>
+    <string name="Phone">电话</string>
+    <string name="webAddress">网址</string>   
+    <string name="storeAdress">地址</string>
+    <string name="share">分享讯息</string>   
+              
+</resources>

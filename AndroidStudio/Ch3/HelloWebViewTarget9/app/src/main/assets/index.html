@@ -1,0 +1,34 @@
+﻿<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="gears_init.js"></script>
+<script type="text/javascript" src="stationData.js"></script>
+<script type="text/javascript" src="locationDetection.js"></script>
+<script type="text/javascript" src="searchNearestStation.js"></script>
+<link rel=stylesheet type="text/css" href="panel.css">
+<link rel="shortcut icon" href="CPCIcon.ico">
+
+</head>
+<body style="margin:0" onLoad="initialize()"> 
+   <div id="scale"><div id="bar"></div></div>	
+   <div><div id="map_canvas" style="z-index:0;width:100%; height:95%"></div></div>
+   <div id="directionsPanel" style="z-index:2;width:90%">
+   <a href="#" style="float:center" onClick="hideRouteDiv()">關閉視窗</a></div>
+   <div style="float:buttom">
+    Number:
+    <SELECT NAME="mylist" onChange="initialize()" id="mylist">
+    <OPTION VALUE="3">3
+    <OPTION VALUE="4">4
+    <OPTION VALUE="5">5
+    <OPTION VALUE="6">6
+    <OPTION VALUE="7">7
+    <OPTION VALUE="8">8
+    <OPTION VALUE="9">9
+    <OPTION VALUE="10">10
+    </SELECT>
+    <P></P>  
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "peterbookmace.taiwanculture.sample"
+        minSdkVersion 8
+        targetSdkVersion 15
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles 'proguard.cfg'
+        }
+    }
+}
+
+dependencies {
+    compile project(':pullToRefreshlibrary')
+    compile project(':photoViewlibrary')
+}

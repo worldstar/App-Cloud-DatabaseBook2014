@@ -1,0 +1,12 @@
+# view AndroidManifest.xml #generated:18
+-keep class peterbookmace.taiwanculture.sample.Main { <init>(...); }
+
+# view AndroidManifest.xml #generated:47
+-keep class peterbookmace.taiwanculture.sample.aboutUS { <init>(...); }
+
+# view AndroidManifest.xml #generated:38
+-keep class peterbookmace.taiwanculture.sample.searchDetails { <init>(...); }
+
+# view AndroidManifest.xml #generated:29
+-keep class peterbookmace.taiwanculture.sample.searchPanel { <init>(...); }
+

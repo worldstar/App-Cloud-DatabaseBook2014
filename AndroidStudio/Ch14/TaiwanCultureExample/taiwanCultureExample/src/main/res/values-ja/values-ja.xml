@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">ようこそ！スマート旅行へ</string>
+    <string name="app_name">台湾芸術を通して</string>
+    <string name="descr_image">Company Figures</string>
+    <string name="PerformingArts">パフォーミング·アーツ</string>
+    <string name="ExhibitionSquare">展示広場</string>
+    <string name="LiveMusic">音楽ライブ</string>   
+    <string name="Lecture">講演会</string>
+    <string name="FilmScope">电影瞭望</string>
+    <string name="CityKaleidoscope">シティ万華鏡</string>  
+    <string name="FamilyOutings">家族の外出</string>
+    <string name="BeyondTaipei">台北ビヨンド</string>
+    <string name="socialnetwork">ソーシャルネットワーク</string>    
+    
+    <string name="checkVersion">バージョンを確認</string>
+    <string name="pleaseWait">しばらくお待ちください</string>
+    <string name="downloadDB">DBをダウンロード</string>   
+    <string name="clickConfirm">[確認]をクリック</string>
+    <string name="confirm">確認する</string>
+    <string name="updateDB">DBの更新</string>  
+    <string name="clickConfirmorCancel">[確認]又は[キャンセル]をクリックする</string>
+    <string name="cancel">キャンセル</string>
+    <string name="downloading">ダウンロード</string>
+    
+    <string name="nearby100">近くの100点</string>  
+    <string name="keyword">キーワードを入力してください</string> 
+    <string name="spinnerHint">選択を行ってください。</string>  
+    <string name="youSelect">現在選択されている</string>
+    <string name="KM">キロ</string>
+    <string name="activityStartDate">開始日</string>
+    <string name="activityEndDate">終了日</string>         
+    
+    <string name="intro">イントロ</string>
+    <string name="Phone">電話</string>
+    <string name="webAddress">ウェブサイト</string>   
+    <string name="storeAdress">住所</string>
+    <string name="share">共有この場所の情報</string>   
+              
+</resources>

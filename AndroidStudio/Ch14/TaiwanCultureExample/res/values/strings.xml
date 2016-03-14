@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SmartTravelActivity!</string>
+    <string name="app_name">台灣藝文通</string>
+    <string name="descr_image">Company Figures</string>
+    <string name="PerformingArts">表演萬象</string>
+    <string name="ExhibitionSquare">展覽廣場</string>
+    <string name="LiveMusic">音樂現場</string>   
+    <string name="Lecture">講座研習</string>
+    <string name="FilmScope">電影瞭望</string>
+    <string name="CityKaleidoscope">城市萬花筒</string>  
+    <string name="FamilyOutings">親子活動</string>
+    <string name="BeyondTaipei">城外行腳</string>
+    <string name="socialnetwork">社群</string>    
+    
+    <string name="checkVersion">檢查資料庫版本</string>
+    <string name="pleaseWait">請稍候...</string>
+    <string name="downloadDB">下載資料庫</string>   
+    <string name="clickConfirm">請點選確認</string>
+    <string name="confirm">確認</string>
+    <string name="updateDB">更新資料庫</string>  
+    <string name="clickConfirmorCancel">請點選確認或取消</string>
+    <string name="cancel">取消</string>
+    <string name="downloading">下載中</string>
+    
+    <string name="nearby100">附近100筆</string>  
+    <string name="keyword">請輸入關鍵字</string>   
+    <string name="spinnerHint">請選擇下面分類</string>
+    <string name="youSelect">目前選擇</string>
+    <string name="KM">公里</string>
+    <string name="activityStartDate">開始時間</string>
+    <string name="activityEndDate">結束時間</string>    
+    
+    <string name="intro">簡介</string>
+    <string name="Phone">電話</string>
+    <string name="webAddress">網址</string>   
+    <string name="storeAdress">地址</string>
+    <string name="share">分享此資訊</string>
+    
+    <string name="about">關於我們</string>
+    <string name="aboutContent">我們的創作理念是希望提升大家的生活品質，因此除了提供最新的藝文資訊外，透過適地性服務(LBS)讓使用者了解附近的藝文活動，進行標題的檢索可以很方便地尋找您感興趣的活動，也能發佈到你的Google行事曆，有利於規劃時間。最後，資訊方面分享的功能也待你去邀請好友一起參與時使用。\n\n此App由「南華大學電子商務系」陳世興老師領銜製作，加上「超能量資訊有限公司」與「工研院」團隊一同開發。詳細名單與聯絡方式如下：</string>
+              
+</resources>

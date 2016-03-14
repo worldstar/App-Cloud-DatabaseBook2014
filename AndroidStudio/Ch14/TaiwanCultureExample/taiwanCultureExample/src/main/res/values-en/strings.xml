@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SmartTravelActivity!</string>
+    <string name="app_name">Taiwan Culture</string>
+    <string name="descr_image">Company Figures</string>
+    <string name="PerformingArts">Performing Arts</string>
+    <string name="ExhibitionSquare">Exhibition Square</string>
+    <string name="LiveMusic">Live Music</string>   
+    <string name="Lecture">Lecture</string>
+    <string name="FilmScope">Film Scope</string>
+    <string name="CityKaleidoscope">City Kaleidoscope</string>  
+    <string name="FamilyOutings">Family Outings</string>
+    <string name="BeyondTaipei">Beyond Taipei</string>
+    <string name="socialnetwork">Social Network</string>    
+    
+    <string name="checkVersion">Check Version</string>
+    <string name="pleaseWait">Please Wait</string>
+    <string name="downloadDB">Download Database</string>   
+    <string name="clickConfirm">Click Confirm</string>
+    <string name="confirm">Confirm</string>
+    <string name="updateDB">Update Database</string>  
+    <string name="clickConfirmorCancel">Click Confirm or Cancel</string>
+    <string name="cancel">Cancel</string>
+    <string name="downloading">Downloading</string>
+    
+    <string name="nearby100">Nearby 100</string>  
+    <string name="keyword">Keyword</string>   
+    <string name="spinnerHint">Please select a category</string>
+    <string name="youSelect">Select</string>
+    <string name="KM">KMs</string>
+    <string name="activityStartDate">Start Date</string>
+    <string name="activityEndDate">End Date</string>        
+    
+    <string name="intro">Introduction</string>
+    <string name="Phone">Phone</string>
+    <string name="webAddress">Web</string>   
+    <string name="storeAdress">Address</string>
+    <string name="share">Share this information</string> 
+              
+</resources>

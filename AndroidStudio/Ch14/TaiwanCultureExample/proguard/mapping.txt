@@ -1,0 +1,205 @@
+peterbookmace.taiwanculture.sample.HelloWebView -> peterbookmace.taiwanculture.sample.HelloWebView:
+    android.widget.TextView textView1 -> a
+    java.lang.String topicId -> b
+    java.lang.String activityName -> c
+    android.webkit.WebView mWebView -> d
+    int langID -> e
+    void onCreate(android.os.Bundle) -> onCreate
+    java.lang.String getHTMLCode() -> a
+    java.lang.String readData(java.lang.String) -> a
+peterbookmace.taiwanculture.sample.HelloWebView$1 -> peterbookmace.taiwanculture.sample.a:
+    peterbookmace.taiwanculture.sample.HelloWebView this$0 -> a
+    void onClick(android.view.View) -> onClick
+peterbookmace.taiwanculture.sample.HelloWebView$HelloWebViewClient -> peterbookmace.taiwanculture.sample.b:
+    peterbookmace.taiwanculture.sample.HelloWebView this$0 -> a
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+peterbookmace.taiwanculture.sample.HelloWebView$MyTaskDownloadDB -> peterbookmace.taiwanculture.sample.c:
+    android.app.ProgressDialog myDialog -> e
+    java.lang.String HTMLCode -> a
+    java.lang.String mimeType -> b
+    java.lang.String encoding -> c
+    peterbookmace.taiwanculture.sample.HelloWebView this$0 -> d
+    void onPreExecute() -> onPreExecute
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+peterbookmace.taiwanculture.sample.Main -> peterbookmace.taiwanculture.sample.Main:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+peterbookmace.taiwanculture.sample.Main$ItemClickListener -> peterbookmace.taiwanculture.sample.d:
+    peterbookmace.taiwanculture.sample.Main this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+peterbookmace.taiwanculture.sample.aboutUS -> peterbookmace.taiwanculture.sample.aboutUS:
+    android.widget.TextView textView1 -> a
+    android.widget.ListView listView -> b
+    int langID -> c
+    void onCreate(android.os.Bundle) -> onCreate
+peterbookmace.taiwanculture.sample.aboutUS$1 -> peterbookmace.taiwanculture.sample.e:
+    peterbookmace.taiwanculture.sample.aboutUS this$0 -> a
+    void onClick(android.view.View) -> onClick
+peterbookmace.taiwanculture.sample.aboutUS$2 -> peterbookmace.taiwanculture.sample.f:
+    peterbookmace.taiwanculture.sample.aboutUS this$0 -> a
+    java.lang.String[] val$email -> b
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+peterbookmace.taiwanculture.sample.getDataFromInternet -> peterbookmace.taiwanculture.sample.g:
+    java.lang.String readJSONData(java.lang.String) -> a
+    java.util.ArrayList parseCategory(java.lang.String) -> b
+    java.lang.String[] parseEventDetails(java.lang.String) -> c
+peterbookmace.taiwanculture.sample.locationDetection -> peterbookmace.taiwanculture.sample.locationDetection:
+    android.location.Location location1 -> a
+    int selectedIndex -> b
+peterbookmace.taiwanculture.sample.mySharePreferences -> peterbookmace.taiwanculture.sample.h:
+    android.content.Context context -> a
+    java.lang.String PREFS_NAME -> b
+    int getLanguageID() -> a
+peterbookmace.taiwanculture.sample.searchDetails -> peterbookmace.taiwanculture.sample.searchDetails:
+    int iconNumber -> a
+    java.lang.String topicId -> b
+    java.lang.String activityName -> c
+    android.widget.TextView textView1 -> d
+    android.widget.ListView listView -> e
+    int[] iconID -> f
+    void onCreate(android.os.Bundle) -> onCreate
+    java.util.ArrayList access$0$79f817d7(java.lang.String[]) -> a
+peterbookmace.taiwanculture.sample.searchDetails$MyTaskDownloadDetails -> peterbookmace.taiwanculture.sample.i:
+    peterbookmace.taiwanculture.sample.getDataFromInternet getDataFromInternet1 -> a
+    java.lang.String eventDetail -> b
+    java.lang.String[] list1 -> c
+    android.app.ProgressDialog myDialog -> e
+    peterbookmace.taiwanculture.sample.searchDetails this$0 -> d
+    void onPreExecute() -> onPreExecute
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+peterbookmace.taiwanculture.sample.searchPanel -> peterbookmace.taiwanculture.sample.searchPanel:
+    int iconNumber -> c
+    int categoryID -> d
+    java.lang.String[] numbers -> e
+    android.widget.ListView listView -> f
+    int[] iconID -> g
+    void onCreate(android.os.Bundle) -> onCreate
+    void fillListView(java.util.ArrayList) -> a
+    void onDestroy() -> onDestroy
+peterbookmace.taiwanculture.sample.searchPanel$1 -> peterbookmace.taiwanculture.sample.j:
+    peterbookmace.taiwanculture.sample.searchPanel this$0 -> a
+    java.util.ArrayList val$list1 -> b
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+peterbookmace.taiwanculture.sample.searchPanel$MyTaskDownloadEvents -> peterbookmace.taiwanculture.sample.k:
+    peterbookmace.taiwanculture.sample.getDataFromInternet getDataFromInternet1 -> a
+    java.util.ArrayList list1 -> b
+    android.app.ProgressDialog myDialog -> e
+    java.lang.String eventsData -> c
+    peterbookmace.taiwanculture.sample.searchPanel this$0 -> d
+    void onPreExecute() -> onPreExecute
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+uk.co.senab.photoview.PhotoView -> uk.co.senab.photoview.PhotoView:
+    uk.co.senab.photoview.PhotoViewAttacher mAttacher -> a
+    void setImageDrawable(android.graphics.drawable.Drawable) -> setImageDrawable
+uk.co.senab.photoview.PhotoViewAttacher -> uk.co.senab.photoview.a:
+    android.view.GestureDetector mGestureDetector -> a
+    uk.co.senab.photoview.VersionedGestureDetector mScaleDragDetector -> b
+    android.graphics.Matrix mBaseMatrix -> c
+    android.graphics.Matrix mDrawMatrix -> d
+    android.graphics.Matrix mSuppMatrix -> e
+    uk.co.senab.photoview.PhotoViewAttacher$OnMatrixChangedListener mMatrixChangeListener -> f
+    uk.co.senab.photoview.PhotoViewAttacher$OnPhotoTapListener mPhotoTapListener -> g
+    float[] mMatrixValues -> h
+    int mScrollEdge -> i
+    boolean mZoomEnabled -> j
+    uk.co.senab.photoview.PhotoViewAttacher$FlingRunnable mCurrentFlingRunnable -> k
+    android.widget.ImageView mImageView -> l
+    int mIvTop -> m
+    int mIvRight -> n
+    int mIvBottom -> o
+    int mIvLeft -> p
+    android.graphics.RectF getDisplayRect() -> a
+    float getScale() -> b
+    boolean onDoubleTap(android.view.MotionEvent) -> onDoubleTap
+    boolean onDoubleTapEvent(android.view.MotionEvent) -> onDoubleTapEvent
+    void onDrag(float,float) -> a
+    void onFling$4098370b(float,float) -> b
+    void onGlobalLayout() -> onGlobalLayout
+    void onScale(float,float,float) -> a
+    boolean onSingleTapConfirmed(android.view.MotionEvent) -> onSingleTapConfirmed
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+    void update() -> c
+    void zoomTo(float,float,float) -> b
+    android.graphics.Matrix getDisplayMatrix() -> d
+    void centerAndDisplayMatrix() -> e
+    void checkMatrixBounds() -> f
+    android.graphics.RectF getDisplayRect(android.graphics.Matrix) -> a
+    void resetMatrix() -> g
+    void setImageViewMatrix(android.graphics.Matrix) -> b
+    void updateBaseMatrix(android.graphics.drawable.Drawable) -> a
+    android.widget.ImageView access$0(uk.co.senab.photoview.PhotoViewAttacher) -> a
+    android.graphics.Matrix access$1(uk.co.senab.photoview.PhotoViewAttacher) -> b
+    void access$2(uk.co.senab.photoview.PhotoViewAttacher,android.graphics.Matrix) -> a
+    void access$3(uk.co.senab.photoview.PhotoViewAttacher) -> c
+uk.co.senab.photoview.PhotoViewAttacher$AnimatedZoomRunnable -> uk.co.senab.photoview.b:
+    float mFocalX -> b
+    float mFocalY -> c
+    float mTargetZoom -> d
+    float mDeltaScale -> e
+    uk.co.senab.photoview.PhotoViewAttacher this$0 -> a
+    void run() -> run
+uk.co.senab.photoview.PhotoViewAttacher$FlingRunnable -> uk.co.senab.photoview.c:
+    uk.co.senab.photoview.ScrollerProxy mScroller -> b
+    int mCurrentX -> c
+    int mCurrentY -> d
+    uk.co.senab.photoview.PhotoViewAttacher this$0 -> a
+    void fling(int,int) -> a
+    void run() -> run
+    void cancelFling() -> a
+uk.co.senab.photoview.PhotoViewAttacher$OnMatrixChangedListener -> uk.co.senab.photoview.d:
+uk.co.senab.photoview.PhotoViewAttacher$OnPhotoTapListener -> uk.co.senab.photoview.e:
+uk.co.senab.photoview.ScrollerProxy -> uk.co.senab.photoview.f:
+    boolean computeScrollOffset() -> a
+    void fling$11627f15(int,int,int,int,int,int,int,int) -> a
+    void forceFinished$1385ff() -> b
+    int getCurrX() -> c
+    int getCurrY() -> d
+uk.co.senab.photoview.ScrollerProxy$GingerScroller -> uk.co.senab.photoview.g:
+    android.widget.OverScroller mScroller -> a
+    boolean computeScrollOffset() -> a
+    void fling$11627f15(int,int,int,int,int,int,int,int) -> a
+    void forceFinished$1385ff() -> b
+    int getCurrX() -> c
+    int getCurrY() -> d
+uk.co.senab.photoview.ScrollerProxy$PreGingerScroller -> uk.co.senab.photoview.h:
+    android.widget.Scroller mScroller -> a
+    boolean computeScrollOffset() -> a
+    void fling$11627f15(int,int,int,int,int,int,int,int) -> a
+    void forceFinished$1385ff() -> b
+    int getCurrX() -> c
+    int getCurrY() -> d
+uk.co.senab.photoview.VersionedGestureDetector -> uk.co.senab.photoview.i:
+    uk.co.senab.photoview.VersionedGestureDetector$OnGestureListener mListener -> a
+    boolean onTouchEvent(android.view.MotionEvent) -> a
+    boolean isScaling() -> a
+uk.co.senab.photoview.VersionedGestureDetector$CupcakeDetector -> uk.co.senab.photoview.j:
+    float mLastTouchX -> b
+    float mLastTouchY -> c
+    float mTouchSlop -> d
+    float mMinimumVelocity -> e
+    android.view.VelocityTracker mVelocityTracker -> f
+    boolean mIsDragging -> g
+    float getActiveX(android.view.MotionEvent) -> b
+    float getActiveY(android.view.MotionEvent) -> c
+    boolean isScaling() -> a
+    boolean onTouchEvent(android.view.MotionEvent) -> a
+uk.co.senab.photoview.VersionedGestureDetector$EclairDetector -> uk.co.senab.photoview.k:
+    int mActivePointerId -> f
+    int mActivePointerIndex -> g
+    float getActiveX(android.view.MotionEvent) -> b
+    float getActiveY(android.view.MotionEvent) -> c
+    boolean onTouchEvent(android.view.MotionEvent) -> a
+uk.co.senab.photoview.VersionedGestureDetector$FroyoDetector -> uk.co.senab.photoview.l:
+    android.view.ScaleGestureDetector mDetector -> f
+    boolean isScaling() -> a
+    boolean onScale(android.view.ScaleGestureDetector) -> onScale
+    boolean onTouchEvent(android.view.MotionEvent) -> a
+    boolean onScaleBegin(android.view.ScaleGestureDetector) -> onScaleBegin
+    void onScaleEnd(android.view.ScaleGestureDetector) -> onScaleEnd
+uk.co.senab.photoview.VersionedGestureDetector$OnGestureListener -> uk.co.senab.photoview.m:
+    void onDrag(float,float) -> a
+    void onFling$4098370b(float,float) -> b
+    void onScale(float,float,float) -> a

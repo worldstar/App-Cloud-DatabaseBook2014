@@ -1,0 +1,25 @@
+#map_canvas {
+  z-index: 1;
+}
+
+#directionsPanel {
+  z-index: 2;
+  position: absolute;
+  top:2%;  
+  border: 1px solid #FFF;
+  background-color:#6699FF;
+  overflow:auto;  
+} 
+
+#scale{
+  width:300px; 
+  border: 1px;
+  solid blue; 
+  visibility:'hidden';
+}
+
+#bar{
+  background-color:blue; 
+  height:4px; 
+  width:0px;
+}

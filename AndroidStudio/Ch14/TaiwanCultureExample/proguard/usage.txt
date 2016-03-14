@@ -1,0 +1,244 @@
+com.google.gson.DefaultDateTypeAdapter
+com.google.gson.ExclusionStrategy
+com.google.gson.FieldAttributes
+com.google.gson.FieldNamingPolicy
+com.google.gson.FieldNamingPolicy$1
+com.google.gson.FieldNamingPolicy$2
+com.google.gson.FieldNamingPolicy$3
+com.google.gson.FieldNamingPolicy$4
+com.google.gson.FieldNamingPolicy$5
+com.google.gson.FieldNamingStrategy
+com.google.gson.Gson
+com.google.gson.Gson$1
+com.google.gson.Gson$2
+com.google.gson.Gson$3
+com.google.gson.Gson$4
+com.google.gson.Gson$5
+com.google.gson.Gson$6
+com.google.gson.Gson$FutureTypeAdapter
+com.google.gson.GsonBuilder
+com.google.gson.InstanceCreator
+com.google.gson.JsonArray
+com.google.gson.JsonDeserializationContext
+com.google.gson.JsonDeserializer
+com.google.gson.JsonElement
+com.google.gson.JsonIOException
+com.google.gson.JsonNull
+com.google.gson.JsonObject
+com.google.gson.JsonParseException
+com.google.gson.JsonParser
+com.google.gson.JsonPrimitive
+com.google.gson.JsonSerializationContext
+com.google.gson.JsonSerializer
+com.google.gson.JsonStreamParser
+com.google.gson.JsonSyntaxException
+com.google.gson.LongSerializationPolicy
+com.google.gson.LongSerializationPolicy$1
+com.google.gson.LongSerializationPolicy$2
+com.google.gson.TreeTypeAdapter
+com.google.gson.TreeTypeAdapter$1
+com.google.gson.TreeTypeAdapter$SingleTypeFactory
+com.google.gson.TypeAdapter
+com.google.gson.TypeAdapter$1
+com.google.gson.TypeAdapterFactory
+com.google.gson.annotations.Expose
+com.google.gson.annotations.SerializedName
+com.google.gson.annotations.Since
+com.google.gson.annotations.Until
+com.google.gson.internal.$Gson$Preconditions
+com.google.gson.internal.$Gson$Types
+com.google.gson.internal.$Gson$Types$GenericArrayTypeImpl
+com.google.gson.internal.$Gson$Types$ParameterizedTypeImpl
+com.google.gson.internal.$Gson$Types$WildcardTypeImpl
+com.google.gson.internal.ConstructorConstructor
+com.google.gson.internal.ConstructorConstructor$1
+com.google.gson.internal.ConstructorConstructor$2
+com.google.gson.internal.ConstructorConstructor$3
+com.google.gson.internal.ConstructorConstructor$4
+com.google.gson.internal.ConstructorConstructor$5
+com.google.gson.internal.ConstructorConstructor$6
+com.google.gson.internal.ConstructorConstructor$7
+com.google.gson.internal.ConstructorConstructor$8
+com.google.gson.internal.Excluder
+com.google.gson.internal.Excluder$1
+com.google.gson.internal.JsonReaderInternalAccess
+com.google.gson.internal.LazilyParsedNumber
+com.google.gson.internal.ObjectConstructor
+com.google.gson.internal.Primitives
+com.google.gson.internal.Streams
+com.google.gson.internal.Streams$1
+com.google.gson.internal.Streams$AppendableWriter
+com.google.gson.internal.Streams$AppendableWriter$CurrentWrite
+com.google.gson.internal.StringMap
+com.google.gson.internal.StringMap$1
+com.google.gson.internal.StringMap$EntrySet
+com.google.gson.internal.StringMap$EntrySet$1
+com.google.gson.internal.StringMap$KeySet
+com.google.gson.internal.StringMap$KeySet$1
+com.google.gson.internal.StringMap$LinkedEntry
+com.google.gson.internal.StringMap$LinkedHashIterator
+com.google.gson.internal.StringMap$Values
+com.google.gson.internal.StringMap$Values$1
+com.google.gson.internal.UnsafeAllocator
+com.google.gson.internal.UnsafeAllocator$1
+com.google.gson.internal.UnsafeAllocator$2
+com.google.gson.internal.UnsafeAllocator$3
+com.google.gson.internal.UnsafeAllocator$4
+com.google.gson.internal.bind.ArrayTypeAdapter
+com.google.gson.internal.bind.ArrayTypeAdapter$1
+com.google.gson.internal.bind.CollectionTypeAdapterFactory
+com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter
+com.google.gson.internal.bind.DateTypeAdapter
+com.google.gson.internal.bind.DateTypeAdapter$1
+com.google.gson.internal.bind.JsonTreeReader
+com.google.gson.internal.bind.JsonTreeReader$1
+com.google.gson.internal.bind.JsonTreeWriter
+com.google.gson.internal.bind.JsonTreeWriter$1
+com.google.gson.internal.bind.MapTypeAdapterFactory
+com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter
+com.google.gson.internal.bind.ObjectTypeAdapter
+com.google.gson.internal.bind.ObjectTypeAdapter$1
+com.google.gson.internal.bind.ObjectTypeAdapter$2
+com.google.gson.internal.bind.ReflectiveTypeAdapterFactory
+com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1
+com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter
+com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$BoundField
+com.google.gson.internal.bind.SqlDateTypeAdapter
+com.google.gson.internal.bind.SqlDateTypeAdapter$1
+com.google.gson.internal.bind.TimeTypeAdapter
+com.google.gson.internal.bind.TimeTypeAdapter$1
+com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper
+com.google.gson.internal.bind.TypeAdapters
+com.google.gson.internal.bind.TypeAdapters$1
+com.google.gson.internal.bind.TypeAdapters$10
+com.google.gson.internal.bind.TypeAdapters$11
+com.google.gson.internal.bind.TypeAdapters$12
+com.google.gson.internal.bind.TypeAdapters$13
+com.google.gson.internal.bind.TypeAdapters$14
+com.google.gson.internal.bind.TypeAdapters$15
+com.google.gson.internal.bind.TypeAdapters$16
+com.google.gson.internal.bind.TypeAdapters$17
+com.google.gson.internal.bind.TypeAdapters$18
+com.google.gson.internal.bind.TypeAdapters$19
+com.google.gson.internal.bind.TypeAdapters$2
+com.google.gson.internal.bind.TypeAdapters$20
+com.google.gson.internal.bind.TypeAdapters$21
+com.google.gson.internal.bind.TypeAdapters$22
+com.google.gson.internal.bind.TypeAdapters$22$1
+com.google.gson.internal.bind.TypeAdapters$23
+com.google.gson.internal.bind.TypeAdapters$24
+com.google.gson.internal.bind.TypeAdapters$25
+com.google.gson.internal.bind.TypeAdapters$26
+com.google.gson.internal.bind.TypeAdapters$27
+com.google.gson.internal.bind.TypeAdapters$28
+com.google.gson.internal.bind.TypeAdapters$29
+com.google.gson.internal.bind.TypeAdapters$3
+com.google.gson.internal.bind.TypeAdapters$30
+com.google.gson.internal.bind.TypeAdapters$31
+com.google.gson.internal.bind.TypeAdapters$32
+com.google.gson.internal.bind.TypeAdapters$4
+com.google.gson.internal.bind.TypeAdapters$5
+com.google.gson.internal.bind.TypeAdapters$6
+com.google.gson.internal.bind.TypeAdapters$7
+com.google.gson.internal.bind.TypeAdapters$8
+com.google.gson.internal.bind.TypeAdapters$9
+com.google.gson.internal.bind.TypeAdapters$EnumTypeAdapter
+com.google.gson.reflect.TypeToken
+com.google.gson.stream.JsonReader
+com.google.gson.stream.JsonReader$1
+com.google.gson.stream.JsonReader$2
+com.google.gson.stream.JsonScope
+com.google.gson.stream.JsonToken
+com.google.gson.stream.JsonWriter
+com.google.gson.stream.JsonWriter$1
+com.google.gson.stream.MalformedJsonException
+com.google.gson.stream.StringPool
+com.handmark.pulltorefresh.library.R
+com.handmark.pulltorefresh.library.R$anim
+com.handmark.pulltorefresh.library.R$attr
+com.handmark.pulltorefresh.library.R$dimen
+com.handmark.pulltorefresh.library.R$drawable
+com.handmark.pulltorefresh.library.R$id
+com.handmark.pulltorefresh.library.R$layout
+com.handmark.pulltorefresh.library.R$string
+com.handmark.pulltorefresh.library.R$styleable
+peterbookmace.taiwanculture.sample.BuildConfig
+peterbookmace.taiwanculture.sample.R
+peterbookmace.taiwanculture.sample.R$anim
+peterbookmace.taiwanculture.sample.R$attr
+peterbookmace.taiwanculture.sample.R$dimen
+peterbookmace.taiwanculture.sample.R$drawable
+peterbookmace.taiwanculture.sample.R$id
+peterbookmace.taiwanculture.sample.R$layout
+peterbookmace.taiwanculture.sample.R$string
+peterbookmace.taiwanculture.sample.R$styleable
+peterbookmace.taiwanculture.sample.aboutUS:
+    android.widget.ImageView imgEvent
+    android.view.View defaultSelectedView
+    android.widget.LinearLayout myGallery
+peterbookmace.taiwanculture.sample.centerOverlay
+peterbookmace.taiwanculture.sample.checkDatabase
+peterbookmace.taiwanculture.sample.locationDetection:
+    public android.location.LocationManager locationManager1
+    public java.lang.String locationPrivider1
+    18:19:public boolean detectGPSSettings()
+    25:26:public boolean detectNetworkSettings()
+    30:39:public boolean detectTwoLocationSettings()
+    43:52:public int detectSatellites()
+    56:81:public void locateMyPosition()
+    85:105:public android.location.Location getMyLocationPrivider(android.location.LocationManager,int)
+peterbookmace.taiwanculture.sample.mySQLiteOpenHelper
+peterbookmace.taiwanculture.sample.mySharePreferences:
+    24:25:public java.lang.String getDBPath()
+    29:33:public void savePreference(java.lang.String,java.lang.String)
+    36:37:public int getDBVersion()
+    41:45:public void saveDBVersion(int)
+    48:49:public boolean hasDatabase()
+    53:57:public void saveHasDatabase(boolean)
+    60:61:public java.lang.String getLastCheckDBVersion()
+    70:74:public void saveTurnOnMultiLangMode(boolean)
+    77:79:public java.lang.String getToday()
+    83:86:public java.lang.String getYesterday()
+    90:95:public void saveLastCheckDBVersion(java.util.Date)
+    98:122:public boolean shouldCheckVersion()
+    170:194:int getCategoryID(int)
+uk.co.senab.photoview.PhotoView:
+    33:35:public PhotoView(android.content.Context)
+    48:48:public boolean canZoom()
+    59:59:public android.graphics.RectF getDisplayRect()
+    68:68:public float getScale()
+    85:86:public void setOnMatrixChangeListener(uk.co.senab.photoview.PhotoViewAttacher$OnMatrixChangedListener)
+    96:97:public void setOnPhotoTapListener(uk.co.senab.photoview.PhotoViewAttacher$OnPhotoTapListener)
+    107:108:public void setZoomable(boolean)
+    121:122:public void zoomTo(float,float,float)
+uk.co.senab.photoview.PhotoViewAttacher:
+    static final boolean DEBUG
+    static final java.lang.String LOG_TAG
+    static final int EDGE_NONE
+    static final int EDGE_LEFT
+    static final int EDGE_RIGHT
+    static final int EDGE_BOTH
+    private static final float MAX_ZOOM
+    private static final float MID_ZOOM
+    private static final float MIN_ZOOM
+    259:259:public boolean canZoom()
+    454:455:public void setOnMatrixChangeListener(uk.co.senab.photoview.PhotoViewAttacher$OnMatrixChangedListener)
+    465:466:public void setOnPhotoTapListener(uk.co.senab.photoview.PhotoViewAttacher$OnPhotoTapListener)
+uk.co.senab.photoview.PhotoViewAttacher$AnimatedZoomRunnable:
+    static final float ANIMATION_SCALE_PER_ITERATION_IN
+    static final float ANIMATION_SCALE_PER_ITERATION_OUT
+uk.co.senab.photoview.R
+uk.co.senab.photoview.R$anim
+uk.co.senab.photoview.R$attr
+uk.co.senab.photoview.R$dimen
+uk.co.senab.photoview.R$drawable
+uk.co.senab.photoview.R$id
+uk.co.senab.photoview.R$layout
+uk.co.senab.photoview.R$string
+uk.co.senab.photoview.R$styleable
+uk.co.senab.photoview.SDK16:
+    22:22:public SDK16()
+uk.co.senab.photoview.VersionedGestureDetector:
+    static final java.lang.String LOG_TAG
+uk.co.senab.photoview.VersionedGestureDetector$EclairDetector:
+    private static final int INVALID_POINTER_ID

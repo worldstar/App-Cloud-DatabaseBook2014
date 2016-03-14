@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>     
+    <RelativeLayout     
+             android:layout_width="fill_parent"     
+             xmlns:android="http://schemas.android.com/apk/res/android"     
+             android:layout_height="wrap_content"     
+             android:paddingBottom="5dip"     
+             android:paddingTop="5dip">    
+
+             <ImageView
+                 android:id="@+id/itemImage"
+                 android:layout_width="75dp"
+                 android:layout_height="75dp"
+                 android:scaleType="fitCenter" >
+             </ImageView>    
+             
+             <TextView     
+                   android:text=""     
+                   android:layout_height="wrap_content"     
+                   android:layout_width="wrap_content"     
+                   android:textColor="#000000"
+                   android:id="@+id/distanceTitle" 
+                   android:layout_alignParentRight="true"
+                   android:layout_alignParentBottom="true"
+                   android:paddingRight="3dp"
+                   android:textSize="14dip"> 
+             </TextView>    
+                                
+             <TextView     
+                   android:text="TextView01"     
+                   android:layout_height="wrap_content"     
+                   android:layout_width="fill_parent"                          
+                   android:textColor="#990000" 
+                   android:id="@+id/itemTitle" 
+                   android:layout_toRightOf="@+id/itemImage" 
+                   android:textSize="18dip">    
+             </TextView>    
+             <TextView     
+                   android:text=""     
+                   android:layout_height="wrap_content"     
+                   android:layout_width="fill_parent"       
+                   android:textColor="#000000" 
+                   android:id="@+id/itemText" 
+                   android:layout_toRightOf="@+id/itemImage" 
+                   android:paddingTop="2dip"
+                   android:layout_below="@+id/itemTitle"
+                   android:textSize="16dip">    
+             </TextView>     
+             
+             <TextView     
+                   android:text="startDate"     
+                   android:layout_height="wrap_content"     
+                   android:layout_width="fill_parent"       
+                   android:textColor="#000000" 
+                   android:id="@+id/startDate" 
+                   android:paddingTop="2dip"
+                   android:layout_toRightOf="@+id/itemImage" 
+                   android:layout_below="@+id/itemText">    
+             </TextView>                
+                        
+                           
+    </RelativeLayout>   
